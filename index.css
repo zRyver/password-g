@@ -42,7 +42,7 @@ body {
 }
 
 #ris{
-    margin: 45px 52px;
+    margin: 45px 52px 0px 45px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -61,4 +61,13 @@ body {
     width: 211px;
     background-color: #333533;
     border-radius: 8px;
+}
+
+#cop{
+    display: flex;
+    flex-direction: row;
+    margin-top: none;
+    justify-content: space-around;
+    color: #d6d6d6;
+    font-family: 'Inter', sans-serif;
 }
