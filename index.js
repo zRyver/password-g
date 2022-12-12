@@ -2,30 +2,17 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 "/"];
 let isAlive =false
 
-const prima = document.getElementById("prim-pass")
-const sec = document.getElementById("sec-pass")
+const pass = document.getElementById("prim-pass")
 const btn = document.getElementById("generate-btn")
-const primMess = document.getElementById("p-prim")
-const secMess  = document.getElementById("p-sec")
-    
+const Mess = document.getElementById("p-prim")
 
 btn.addEventListener("click",function(){
-    prima.textContent = " "
-    sec.textContent=" "
-    for( let i = 0; i < 10; i++){
-        prima.textContent += characters[Math.floor(Math.random()*characters.length)]
-        sec.textContent += characters[Math.floor(Math.random()*characters.length)]
-    
-    }
+    pass.textContent = " "
+    for( let i = 0; i < 10; i++)  pass.textContent += characters[Math.floor(Math.random()*characters.length)]
+       
 })
 
 prima.addEventListener("click",function(){
     navigator.clipboard.writeText(prima.textContent)
     primMess.textContent = "copied on clipboard"
 })
-
-sec.addEventListener("click",function(){
-    navigator.clipboard.writeText(sec.textContent)
-    secMess.textContent = "copied on clipboard"
-})
-
